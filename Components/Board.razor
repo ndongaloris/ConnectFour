@@ -4,12 +4,33 @@
 <HeadContent>
     <style>
         :root {
-            --board-bg: @ColorTranslator.ToHtml(BoardColor);
-            --player1: @ColorTranslator.ToHtml(Player1Color);
-            --player2: @ColorTranslator.ToHtml(Player2Color);
+            --board-bg:
+                @ColorTranslator.ToHtml(BoardColor)
+            ;
+            --player1:
+                @ColorTranslator.ToHtml(Player1Color)
+            ;
+            --player2:
+                @ColorTranslator.ToHtml(Player2Color)
+            ;
         }
     </style>
 </HeadContent>
+<div style={display:block}>
+    <h3>Board Game: Connect Four</h3>
+
+    <table class="score">
+        <tr>
+            <th>Scores</th>
+        </tr>
+        <tr>
+            <td> Player 1: @Player1Score </td>
+        </tr>
+        <tr>
+            <td> Player 2: @Player2Score </td>
+        </tr>
+    </table>
+</div>
 
 <nav>
     @for (byte i = 0; i < 7; i++)
@@ -54,6 +75,14 @@
 
     [Parameter]
     public Color Player2Color { get; set; } = ColorTranslator.FromHtml("blue");
+    public int Player1Score { get; set; } = 0;
+    public int Player2Score { get; set; } = 0;
+
+    private void UpdateScore(int winner)
+    {
+        if (winner == 1) Player1Score++;
+        else if (winner == 2) Player2Score++;
+    }
 
     private void PlayPiece(byte col)
     {
@@ -76,6 +105,10 @@
             GameState.WinState.Tie => "It's a tie!",
             _ => ""
         };
+        if (State.CheckForWin() == GameState.WinState.Player1_Wins)
+            UpdateScore(1);
+        else if (State.CheckForWin() == GameState.WinState.Player2_Wins)
+            UpdateScore(2);
     }
 
 

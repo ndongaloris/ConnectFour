@@ -2,6 +2,10 @@ div {
     position: relative
 }
 
+.score tr td {
+    text-align: center;
+}
+
 nav {
     top: 4em;
     width: 30em;

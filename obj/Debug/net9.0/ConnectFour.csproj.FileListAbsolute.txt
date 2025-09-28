@@ -75,5 +75,6 @@ C:\Users\ndong\OneDrive\jared ndonga\ConnectFour\connectfour\obj\Debug\net9.0\Co
 C:\Users\ndong\OneDrive\jared ndonga\ConnectFour\connectfour\obj\Debug\net9.0\ConnectFour.genruntimeconfig.cache
 C:\Users\ndong\OneDrive\jared ndonga\ConnectFour\connectfour\obj\Debug\net9.0\ref\ConnectFour.dll
 C:\Users\ndong\OneDrive\jared ndonga\ConnectFour\connectfour\obj\Debug\net9.0\scopedcss\Components\Board.razor.rz.scp.css
-C:\Users\ndong\OneDrive\jared ndonga\ConnectFour\connectfour\obj\Debug\net9.0\compressed\8rgyt56fu5-90sst788bl.gz
-C:\Users\ndong\OneDrive\jared ndonga\ConnectFour\connectfour\obj\Debug\net9.0\compressed\i191p69b07-90sst788bl.gz
+C:\Users\ndong\OneDrive\jared ndonga\ConnectFour\ConnectFour\obj\Debug\net9.0\ConnectFour.sourcelink.json
+C:\Users\ndong\OneDrive\jared ndonga\ConnectFour\ConnectFour\obj\Debug\net9.0\compressed\8rgyt56fu5-7aucdqg8ur.gz
+C:\Users\ndong\OneDrive\jared ndonga\ConnectFour\ConnectFour\obj\Debug\net9.0\compressed\i191p69b07-7aucdqg8ur.gz
